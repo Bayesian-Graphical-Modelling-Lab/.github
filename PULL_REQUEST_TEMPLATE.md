@@ -1,48 +1,56 @@
----
-name: Pull Request Template
-about: Please use the following template to open pull requests.
-title: ''
-labels: ''
-assignees: ''
-
----
-
 ## Description
-Please provide a summary of the changes.
+
+Provide a concise summary of the changes.
 
 ### Problem / Motivation
-If this is a bug fix, describe the specific problem or edge case being addressed. If this is a methodological update, explain the theoretical gap or necessity for this change.
-Please add a code demonstration of the problem you are trying to solve
-```
+
+If this is a bug fix, describe the specific problem or edge case being
+addressed. If this is a methodological update, explain the theoretical gap or
+need for the change.
+
+If helpful, add a minimal code example that demonstrates the problem.
+
+```r
 # Problem demonstration
 ```
 
 ### Proposed Changes / New Functionality
-Describe the new features or logic introduced. Specify if this affects prior specifications, sampling algorithms (Rcpp), or summary outputs.
 
-Fixes # (issue number)
+Describe the new functionality or logic introduced. Note any important effects
+on APIs, numerical methods, documentation, workflows, or user-facing behaviour.
 
-Please add a code demonstration of your new functionality
-```
-# New feature
+Fixes #
+
+If helpful, add a minimal code example that demonstrates the new behaviour.
+
+```r
+# New behaviour
 ```
 
 ## Type of Change
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Breaking change
 - [ ] Documentation update
 - [ ] Performance optimization
-- [ ] Statistical/Methodological update
+- [ ] Statistical / methodological update
 
-## Files Edited
-Please list the primary files modified in this PR and a brief note on why.
-1. 
-2. 
-3. 
+## Documentation and Release Notes
+
+- [ ] Updated relevant documentation for changed behaviour or interfaces
+- [ ] Updated changelog or release notes if the change affects users
+- [ ] Added examples when they clarify the new behaviour
 
 ## Testing and Validation
-Describe the steps taken to verify the changes.
-- Unit Tests: Added/updated tests in `tests/testthat/`
-- Numerical Validation: Verified posterior consistency or Bayes factor stability.
-- R CMD check: Ran `devtools::check()` and it passed with 0 errors/warnings.
+
+Describe the checks you ran and the main results.
+
+- [ ] Added or updated tests where needed
+- [ ] Ran the relevant package or project checks
+- [ ] Verified numerical or methodological behaviour where relevant
+
+## Additional Notes
+
+List any reviewer context that is important for evaluation: open design
+questions, follow-up work, expected numerical differences, or known limits.
